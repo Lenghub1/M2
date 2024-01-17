@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import "@material/button/dist/mdc.button.css";
 import Textfield from "./Textfield";
-
+import { useNavigate } from "react-router-dom";
 const Home = () => {
   const buttonStyle = {
     backgroundColor: "#4CAF50",
@@ -13,7 +13,7 @@ const Home = () => {
       style={{
         display: "flex",
         flexDirection: "column",
-        gap: "10px",
+        gap: "12px",
         boxShadow: "0 0 10px rgba(0, 0, 0, 0.1)", // Box shadow added
         padding: "20px",
         borderRadius: "20px",
