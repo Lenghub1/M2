@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import "@material/button/dist/mdc.button.css";
 import Textfield from "./Textfield";
-import Textfields from "./Textfield2";
+
 const Home = () => {
   const buttonStyle = {
     backgroundColor: "#4CAF50",
@@ -22,9 +22,9 @@ const Home = () => {
     >
       <h2>Login</h2>
       <Textfield name={"username"} />
-      <Textfields />
+      <Textfield name={"password"} />
       <div style={{ display: "flex", gap: "20px", justifyContent: "center" }}>
-        <button className="mdc-button mdc-button--raised" style={buttonStyle}>
+        <button className="mdc-button mdc-button--raised " style={buttonStyle}>
           <span className="mdc-button__label">Login</span>
         </button>
         <button className="mdc-button mdc-button--raised" style={buttonStyle}>
